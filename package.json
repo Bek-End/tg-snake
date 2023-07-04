@@ -1,0 +1,26 @@
+{
+  "type": "module",
+  "dependencies": {
+    "@waylaidwanderer/chatgpt-api": "^1.37.1",
+    "node-fetch": "^3.3.1",
+    "tgsnake": "^2.1.0"
+  },
+  "name": "snaketelegram",
+  "version": "1.0.0",
+  "description": "Used to comment",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "engines": {
+    "node": "20.3.1"
+  },
+  "keywords": [
+    "snake",
+    "heroku"
+  ],
+  "author": "jansa_beska",
+  "license": "MIT"
+}
