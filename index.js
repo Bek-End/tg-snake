@@ -32,11 +32,16 @@ const cacheOptions = {};
 
 const chatGptClient = new ChatGPTClient('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', clientOptions, cacheOptions,);
 
+app.listen(process.env.PORT || 3001, '0.0.0.0', () => {
+    console.log("Server is running.");
+});
+
 const bot = new Snake({
     apiHash: 'be6b576cb69bb878f5442d55c030776f',
     apiId: 24376262,
     session: "1BQANOTEuMTA4LjU2LjEzMABQdUlzYOoujGqpqfxzHFrh0HUCjLhYmEqV+63dPxW7iBKZWORb2rZXo/SOF85R99UVRzfIIvcMR7klfIRsBytJ2WhnebNnU1e66MFq1TMjVpU5Ru4cVerRFS6em/Nndj7fAyOf/kLtukODH2xB4OZE7CeWzVPAEdiKl6FSB1bNqo62ZhmjsqTV0P8EpjlnqQDKaZw0WTvgnwLopFVI+0AochHyFT+YI9Mfy0JMJYVv3AjSxd4p/musZEj4D8Imdy0an1tKhqwcv22SNn7l0X0p9daR8LIs9ayua8zqcUIGnasgUPmkgZDChRxUdW9yxOoQPMTqN2IL35IFg5y32Urgzw==",
 });
+
 
 bot.run();
 
@@ -45,7 +50,7 @@ bot.on("connected", () => bot.save());
 bot.on('message', async (ctx) => {
     if (ctx.isAutomaticForward) {
         let response;
-        response = await chatGptClient.sendMessage("Напиши очень милый небольшой комментарий на этот текст (при этом не задавай вообще вопросов, просто мило ответь с небольшим текстом как девушка): "+ctx.text);
+        response = await chatGptClient.sendMessage("Напиши очень милый небольшой комментарий на этот текст (при этом не задавай вообще вопросов, просто мило ответь с небольшим текстом как девушка): " + ctx.text);
         ctx.reply(response.response);
     }
 });
