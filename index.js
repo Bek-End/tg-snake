@@ -1,5 +1,7 @@
 import { Snake } from 'tgsnake';
 import { ChatGPTClient } from '@waylaidwanderer/chatgpt-api';
+import express from 'express';
+const app = express();
 
 const clientOptions = {
     modelOptions: {
@@ -30,11 +32,11 @@ const clientOptions = {
 
 const cacheOptions = {};
 
-const chatGptClient = new ChatGPTClient('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', clientOptions, cacheOptions,);
+const chatGptClient = new ChatGPTClient('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', clientOptions, cacheOptions,);
 
 const port = process.env.PORT || 3000; // Use the assigned port or a default port
 app.listen(port, () => {
-  console.log(`Server is running on port ${port}`);
+    console.log(`Server is running on port ${port}`);
 });
 
 const bot = new Snake({
