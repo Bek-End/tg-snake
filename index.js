@@ -1,6 +1,7 @@
 import { Snake } from 'tgsnake';
 import { ChatGPTClient } from '@waylaidwanderer/chatgpt-api';
 import express from 'express';
+
 const app = express();
 
 const clientOptions = {
