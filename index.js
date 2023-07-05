@@ -41,9 +41,9 @@ app.listen(port, () => {
 });
 
 const bot = new Snake({
-    apiHash: 'be6b576cb69bb878f5442d55c030776f',
-    apiId: 24376262,
-    session: "1BQANOTEuMTA4LjU2LjEzMABQdUlzYOoujGqpqfxzHFrh0HUCjLhYmEqV+63dPxW7iBKZWORb2rZXo/SOF85R99UVRzfIIvcMR7klfIRsBytJ2WhnebNnU1e66MFq1TMjVpU5Ru4cVerRFS6em/Nndj7fAyOf/kLtukODH2xB4OZE7CeWzVPAEdiKl6FSB1bNqo62ZhmjsqTV0P8EpjlnqQDKaZw0WTvgnwLopFVI+0AochHyFT+YI9Mfy0JMJYVv3AjSxd4p/musZEj4D8Imdy0an1tKhqwcv22SNn7l0X0p9daR8LIs9ayua8zqcUIGnasgUPmkgZDChRxUdW9yxOoQPMTqN2IL35IFg5y32Urgzw==",
+    apiHash: '834b1f59ccbf137c5810476fb327cef3',
+    apiId: 21284989,
+    session: "1BAAOMTQ5LjE1NC4xNjcuOTEAUGALAa/Mqcv16YW+C71FGtrwYdxFYoK+onMHAUHqKBuYQi+3+blm6JRZ4YFXcxFFj5vEsG+I2PTsNSHiRp7jr+wgcQ79LWidB5YKveOB28krZJjHrFvlKt5J4BcEurFfjiNXz6/lpk3u3esGgsebDcbOrkMoV07eqznr/A3DS05Skr9d0Stnvo0BrWClyzQ/LStN7WQ8zB2FSjD0pGDjV6F/AtgOVqqH8GP4mCQNY+9aEHPaQoNMPjGXlS0uip8sYvLbY93KwP9jqR3/kjnEvmXC9MTo3FROcPCv8yW8LdvvQMeTw+uP+W9cutK7paQMA29lZfsSwdfUeEf2SVVVpgc=",
 });
 
 
