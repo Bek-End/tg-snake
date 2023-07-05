@@ -32,8 +32,9 @@ const cacheOptions = {};
 
 const chatGptClient = new ChatGPTClient('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', clientOptions, cacheOptions,);
 
-app.listen(process.env.PORT || 3001, '0.0.0.0', () => {
-    console.log("Server is running.");
+const port = process.env.PORT || 3000; // Use the assigned port or a default port
+app.listen(port, () => {
+  console.log(`Server is running on port ${port}`);
 });
 
 const bot = new Snake({
